@@ -1,0 +1,152 @@
+body {
+
+}
+
+@media screen and (max-width: 463px) {
+    
+}
+
+a{
+    color: black !important;;
+}
+
+
+
+#main-container { 
+    background-image: URL("/Users/Kevin/Desktop/Code Folio/wallabiesCounter/images/sadWallabies.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+} 
+
+#main-landing {
+    height: 100vh;
+    /*background-color:grey;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgba(181, 181, 181, 0.2); 
+}
+
+#break-statement{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+
+#countup {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 50%;
+    padding: 5px;
+    margin: 5px;
+    /*background-color: rgb(2, 38, 1); */
+    border-radius: 5px;
+    /*background: #FFA500;*/
+    border-radius: 2px;
+}
+
+#counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color:pink;*/
+    font-family: 'Biryani', sans-serif;
+    padding: 10px;
+    margin: 0em 2em 2em 2em;
+}
+
+.count-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+    background-color: red;
+    height: 5em;
+    width: 6em;
+    padding-left: 5px; 
+    padding-right: 5px;
+    margin: 0px;
+}
+
+#mainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color:blue;*/
+    font-family: 'Biryani', sans-serif;
+    padding: 10px;
+    margin: 2em;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    text-align: center;
+    /*background-color:red;*/
+    padding: 0px;
+    margin: 0px;
+}
+
+#nokia {
+    background-image: URL("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Nokia_6100.jpg/500px-Nokia_6100.jpg");
+    background-size: cover;
+}
+
+#kathkim {
+    background-image: URL("https://image.tmdb.org/t/p/w780/2CUGCZKcPJ0iYmuINUzj6cQJGJY.jpg");
+    background-size: cover;
+}
+
+#bradbury {
+    background-image: URL("https://cdn4.theroar.com.au/wp-content/uploads/2017/06/Doing-a-Bradbury.jpg");
+    background-size: cover;
+}
+
+#disney {
+    background-image: URL("https://wizarddojo.files.wordpress.com/2015/09/070912_fs_datelinedisney_liloandstitch_feat_11.png");
+    background-size: cover%;
+    background-position: center;
+}
+
+#idol {
+    background-image: URL("http://www.nydailynews.com/resizer/82fDnYTy15ACOe3owdwuZN0JKLM=/1400x0/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LX5UXHJL2YJ2KHT4XF6LDGTZPA.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#eminem {
+    background-image: URL("https://img.discogs.com/Q5HarZoS2W44WBmX4d_0BVk1gGk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-250771-1371031354-1165.jpeg.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(181, 181, 181, 0.5);
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#footer{
+    width:100vw;
+    text-align: center;
+    margin: 2em;
+}

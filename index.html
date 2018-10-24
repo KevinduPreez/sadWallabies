@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Biryani:900" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '317556502308881',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v3.2'
+        });
+
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.likes',
+            action_properties: JSON.stringify({
+                object: 'https://developers.facebook.com/docs/javascript/examples',
+            })
+        }, function(response) {
+            // Debug response (optional)
+            console.log(response);
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- -->
+    <div id="main-container">
+        <div id="main-landing">
+            <div id="mainTitle">
+                <h1>Days since the Wallabies held the Bledisloe</h1>
+            </div>
+            <div id=counter>
+                <div id="countup" class="container">
+                    <p id="years" class="count-container">00</p>
+                    <p id="days" class="count-container">00</p>
+                    <p id="hours" class="count-container">00</p>
+                    <p id="minutes" class="count-container">00</p>
+                    <p id="seconds" class="count-container">00</p>
+                </div>
+                <div id="shareBtn" class="btn btn-primary" onclick="fbShare()">Share</div>
+            </div>
+        </div>
+    </div>
+    <div id="break-statement">
+        <h2>OTHER THINGS THAT HAPPENED THAT YEAR</h2>
+    </div>
+    <div class="grid-container">
+        <div id="nokia" class="grid-item">
+            <div class="info-container">
+                <h4>NOKIA</h4>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/List_of_best-selling_mobile_phones#2002_2">Was the best selling  handset, with the Nokia 6100, 6610 and Nokia 3510 being the best.</a></p>
+            </div>
+        </div>
+        <div id="kathkim" class="grid-item">
+            <div class="info-container">
+                <h4>"NOICE"</h4>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Kath_%26_Kim">Kath and Kim hit Australian TV's for the first time. With such catch phrases as "noice" etc.</a></p>
+            </div>
+        </div>
+        <div id="bradbury" class="grid-item">
+            <div class="info-container">
+                <h4>
+      Stephen Bradbury
+    </h4>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Steven_Bradbury">Won gold an unlikely gold at the 2002 winter Olympics in Salt Lake City, USA.</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div id="disney" class="grid-item">
+            <div class="info-container">
+                <h4>Disney</h4>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Lilo_%26_Stitch">Released the animated classic Lilo and Stitch.</a></p>
+            </div>
+        </div>
+        <div id="idol" class="grid-item">
+            <div class="info-container">
+                <h4>"Kelly Clarkson"</h4>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/American_Idol_(season_1)">Won the first season of American Idol.</a></p>
+            </div>
+        </div>
+        <div id="eminem" class="grid-item">
+            <div class="info-container">
+                <h4>
+      The Eminem Show 
+    </h4>
+                <p class="info-para"><a href="https://www.billboard.com/articles/news/72827/eminem-ends-year-on-top-but-album-sales-tumble">Became the best selling album of the year.</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h5>Designed by Kevin</h5>
+    </div>
+</body>
+
+</html>
