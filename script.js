@@ -33,11 +33,25 @@ function upTime(countTo) {
 //RUN FACEBOOK SHARE FOR HTML ONCLICK 
 function fbShare() {
     //alert("yes");
+            FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.likes',
+            action_properties: JSON.stringify({
+                object: 'https://kevindupreez.github.io/sadWallabies/',
+            })
+        }, function(response) {
+            // Debug response (optional)
+            console.log(response);
+        });
+/*
+
     FB.ui({
         method: 'share',
         display: 'popup',
         href: 'https://developers.facebook.com/docs/',
-    }, function(response) {});
+    }, function(response) {}); 
+
+*/
 };
 //FACEBOOK  SHARE INIT
     window.fbAsyncInit = function() {
@@ -47,7 +61,7 @@ function fbShare() {
             xfbml: true,
             version: 'v3.2'
         });
-
+/*
         FB.ui({
             method: 'share_open_graph',
             action_type: 'og.likes',
@@ -58,6 +72,7 @@ function fbShare() {
             // Debug response (optional)
             console.log(response);
         });
+*/
     };
 
     (function(d, s, id) {
