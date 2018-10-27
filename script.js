@@ -1,5 +1,5 @@
 //alert("Working")
-
+//THERES A SNAKE IN MY BOOT!
 window.onload = function() {
     // Month,Day,Year,Hour,Minute,Second
     upTime('aug,16,2003,17:05:00'); // ****** Change this line!
