@@ -7,7 +7,7 @@ body {
 }
 
 a{
-    color: black !important;;
+    color: black;
 }
 
 
@@ -62,12 +62,30 @@ a{
     margin: 0em 2em 2em 2em;
 }
 
+#shareButtons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgba(46, 48, 51, 0.0);
+    color: white !important;;
+    background-color: rgba(46, 48, 51, 0.0);
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 35px;
+}
+
 .count-container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-    background-color: red;
+    background-color: rgba(46, 48, 51, 0.7);
     height: 5em;
     width: 6em;
     padding-left: 5px; 
@@ -99,6 +117,10 @@ a{
     /*background-color:red;*/
     padding: 0px;
     margin: 0px;
+}
+
+.twoThou{
+    color: black !important;
 }
 
 #nokia {

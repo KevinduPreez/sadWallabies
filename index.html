@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -13,7 +14,6 @@
 
 <body>
     <script>
-
     </script>
     <!-- -->
     <div id="main-container">
@@ -22,6 +22,7 @@
                 <h1>Days since the Wallabies held the Bledisloe</h1>
             </div>
             <div id=counter>
+
                 <div id="countup" class="container">
                     <p id="years" class="count-container">00</p>
                     <p id="days" class="count-container">00</p>
@@ -29,7 +30,21 @@
                     <p id="minutes" class="count-container">00</p>
                     <p id="seconds" class="count-container">00</p>
                 </div>
-                <div id="shareBtn" class="btn btn-primary" onclick="fbShare()">Share</div>
+                <div id="shareButtons">
+                    <!-- SOCIALS -->
+                    <button class="socials">
+                        <div id="shareBtn" onclick="fbShare()">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div> 
+                    </button>
+
+
+                    <button class="socials"><div id="shareBtnTwitter">
+                        <a href="https://twitter.com/intent/tweet?url=https://kevindupreez.github.io/sadWallabies/&hashtags=sadWallabies,BledisloeCup"><i class="fab fa-twitter"></i></a>
+                    </div></button>
+                </div>
             </div>
         </div>
     </div>
@@ -40,13 +55,13 @@
         <div id="nokia" class="grid-item">
             <div class="info-container">
                 <h4>NOKIA</h4>
-                <p class="info-para"><a href="https://en.wikipedia.org/wiki/List_of_best-selling_mobile_phones#2002_2">Was the best selling  handset, with the Nokia 6100, 6610 and Nokia 3510 being the best.</a></p>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/List_of_best-selling_mobile_phones#2002_2" class="twoThou">Was the best selling  handset, with the Nokia 6100, 6610 and Nokia 3510 being the best.</a></p>
             </div>
         </div>
         <div id="kathkim" class="grid-item">
             <div class="info-container">
                 <h4>"NOICE"</h4>
-                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Kath_%26_Kim">Kath and Kim hit Australian TV's for the first time. With such catch phrases as "noice" etc.</a></p>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Kath_%26_Kim" class="twoThou">Kath and Kim hit Australian TV's for the first time. With such catch phrases as "noice" etc.</a></p>
             </div>
         </div>
         <div id="bradbury" class="grid-item">
@@ -54,7 +69,7 @@
                 <h4>
       Stephen Bradbury
     </h4>
-                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Steven_Bradbury">Won gold an unlikely gold at the 2002 winter Olympics in Salt Lake City, USA.</a></p>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Steven_Bradbury" class="twoThou">Won an unlikely gold at the 2002 winter Olympics in Salt Lake City, USA.</a></p>
             </div>
         </div>
     </div>
@@ -62,13 +77,13 @@
         <div id="disney" class="grid-item">
             <div class="info-container">
                 <h4>Disney</h4>
-                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Lilo_%26_Stitch">Released the animated classic Lilo and Stitch.</a></p>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/Lilo_%26_Stitch" class="twoThou">Released the animated classic Lilo and Stitch.</a></p>
             </div>
         </div>
         <div id="idol" class="grid-item">
             <div class="info-container">
                 <h4>"Kelly Clarkson"</h4>
-                <p class="info-para"><a href="https://en.wikipedia.org/wiki/American_Idol_(season_1)">Won the first season of American Idol.</a></p>
+                <p class="info-para"><a href="https://en.wikipedia.org/wiki/American_Idol_(season_1)" class="twoThou">Won the first season of American Idol.</a></p>
             </div>
         </div>
         <div id="eminem" class="grid-item">
@@ -76,7 +91,7 @@
                 <h4>
       The Eminem Show 
     </h4>
-                <p class="info-para"><a href="https://www.billboard.com/articles/news/72827/eminem-ends-year-on-top-but-album-sales-tumble">Became the best selling album of the year.</a></p>
+                <p class="info-para"><a href="https://www.billboard.com/articles/news/72827/eminem-ends-year-on-top-but-album-sales-tumble" class="twoThou">Became the best selling album of the year.</a></p>
             </div>
         </div>
     </div>
