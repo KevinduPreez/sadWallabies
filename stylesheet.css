@@ -18,6 +18,7 @@ a {
 }
 
 
+
 #main-container {
     background-image: URL(https://kevindupreez.github.io/sadWallabies/images/sadWallabies.jpg);
     background-size: cover;
@@ -186,3 +187,9 @@ a {
     text-align: center;
     margin: 2em;
 }
+
+.info-para {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
