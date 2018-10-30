@@ -13,7 +13,7 @@ a{
 
 
 #main-container { 
-    background-image: URL("/Users/Kevin/Desktop/CodeFolio/wallabiesCounter/images/sadWallabies.jpg");
+    background-image: URL(https://kevindupreez.github.io/kevindupreez/images/sadWallabies.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
