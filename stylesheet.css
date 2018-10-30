@@ -8,6 +8,8 @@ body {}
 
     .infoHeader{
     	font-size: 20px !important;
+    	font-weight: 350;
+    	margin:0 ;
     }
 }
 
@@ -183,9 +185,4 @@ a {
     width: 100vw;
     text-align: center;
     margin: 2em;
-}
-
-.info-para {
-    padding-left: 2em;
-    padding-right: 2em;
 }
