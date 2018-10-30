@@ -40,7 +40,7 @@ function fbShare() {
         method: 'share_open_graph',
         action_type: 'og.likes',
         action_properties: JSON.stringify({
-            object: 'http://www.sadwallabies.com/',
+            object: 'https://kevindupreez.github.io/sadWallabies/',
         })
     }, function(response) {
         // Debug response (optional)
