@@ -17,11 +17,11 @@ function upTime(countTo) {
     hours = Math.floor((difference % (60 * 60 * 1000 * 24)) / (60 * 60 * 1000) * 1);
     mins = Math.floor(((difference % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) / (60 * 1000) * 1);
     secs = Math.floor((((difference % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) % (60 * 1000)) / 1000 * 1);
-    document.getElementById('years').firstChild.nodeValue = years + " years ";
-    document.getElementById('days').firstChild.nodeValue = days + " days";
-    document.getElementById('hours').firstChild.nodeValue = hours + " hours";
+    document.getElementById('years').firstChild.nodeValue = years + " year(s) ";
+    document.getElementById('days').firstChild.nodeValue = days + " day(s)";
+    document.getElementById('hours').firstChild.nodeValue = hours + " hour(s)";
     document.getElementById('minutes').firstChild.nodeValue = mins + " min(s)";
-    document.getElementById('seconds').firstChild.nodeValue = secs + " secs";
+    document.getElementById('seconds').firstChild.nodeValue = secs + " sec(s)";
 
     clearTimeout(upTime.to);
     upTime.to = setTimeout(function() { upTime(countTo); }, 1000);
